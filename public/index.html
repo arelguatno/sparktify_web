@@ -8,20 +8,31 @@
   <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
   <title>Sparktify</title>
 </head>
 
 
 <body>
-  <h2>Sparktify</h2>
+  <div class="jumbotron text-center">
+    <h1>Welcome to Sparktify</h1>
+  </div>
 
+  <div class="text-center">
 
-  Room name:<br>
-  <input id="room_name" type="text"><br>
-  Password:<br>
-  <input type="password" name="psw"><br><br>
+    <h4>Room name</h4>
+    <input id="room_name" type="text"><br>
+    <h4>Password</h4>
+    <input type="password" name="psw"><br><br>
 
-  <button type="button" onclick="onClick()">Create Room</button>
+    <button type="button" onclick="onClick()">Create Room</button>
+
+  </div>
   <script src="index.js"></script>
 
 </body>

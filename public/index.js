@@ -22,7 +22,7 @@ function onClick() {
     };
 
     db.collection("game_room").doc(roomName.value).set(docData).then(function () {
-        window.location.href = "room.html"; //Will take you to Google.
+        window.location.href = "room.html";
 
     }).catch(function (error) {
         console.error("Error writing document: ", error);
