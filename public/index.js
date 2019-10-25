@@ -12,3 +12,21 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
+
+var db = firebase.firestore();
+
+var roomName = document.getElementById("room_name");
+function onClick() {
+    var docData = {
+        dateCreated: firebase.firestore.Timestamp.fromDate(new Date())
+    };
+
+    db.collection("game_room").doc(roomName.value).set(docData).then(function () {
+        window.location.href = "room.html"; //Will take you to Google.
+
+    }).catch(function (error) {
+        console.error("Error writing document: ", error);
+    });
+
+}
+
